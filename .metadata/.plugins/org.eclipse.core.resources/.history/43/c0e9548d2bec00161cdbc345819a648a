@@ -1,0 +1,65 @@
+package com.uma.countryApp.DTO;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+@Entity
+@Table(name="State_List")
+public class StateDTO implements Serializable 
+{
+	@Id
+	@GenericGenerator(name="abc", strategy="Increment")
+	@GeneratedValue(generator="abc")
+	private String sid;
+	@Column(name="state_name")
+	private String sName;
+	@Column(name="state_lang")
+	private String language;
+	@ManyToOne
+	private CountryDTO countryDTO;
+	
+	public StateDTO() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getSid() {
+		return sid;
+	}
+
+	public void setSid(String sid) {
+		this.sid = sid;
+	}
+
+	public String getsName() {
+		return sName;
+	}
+
+	public void setsName(String sName) {
+		this.sName = sName;
+	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	public CountryDTO getCountryDTO() {
+		return countryDTO;
+	}
+
+	public void setCountryDTO(CountryDTO countryDTO) {
+		this.countryDTO = countryDTO;
+	}
+	
+	
+}

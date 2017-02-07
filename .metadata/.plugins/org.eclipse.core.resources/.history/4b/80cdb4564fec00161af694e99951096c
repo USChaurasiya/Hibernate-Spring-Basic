@@ -1,0 +1,5 @@
+package com.uma.continentApp.DTO;
+
+public class CountryDTO {
+
+}

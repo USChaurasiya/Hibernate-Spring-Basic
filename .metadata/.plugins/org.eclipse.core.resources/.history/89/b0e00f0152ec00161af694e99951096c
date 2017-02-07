@@ -1,0 +1,21 @@
+package com.uma.continentApp.Util;
+
+import com.uma.continentApp.DTO.ContinentDTO;
+import com.uma.continentApp.DTO.CountryDTO;
+
+public class ContinentDemo 
+{
+	public static void main(String[] args) {
+		
+		ContinentDTO asia=new ContinentDTO();
+		asia.setName("Asia");
+		
+		CountryDTO india=new CountryDTO();
+		india.setCtryName("India");
+		india.setCtryCurrency("INR");
+		
+		CountryDTO sri=new CountryDTO();
+		sri.setCtryName("Sri Lanka");
+		sri.setCtryCurrency("Sri Lankan rupee");
+	}
+}

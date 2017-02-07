@@ -1,0 +1,62 @@
+package com.uma.continentApp.DTO;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+@Entity
+@Table(name="Continent_table")
+public class ContinentDTO implements Serializable 
+{
+
+	@Id
+	@GenericGenerator(name="any",strategy="increment")
+	@GeneratedValue(generator="any")
+	@Column(name="cid")
+	private int cid;
+	
+	@Column(name="name")
+	private String name;
+	
+	@OneToMany(cascade=CascadeType.ALL)
+	@Column(name="cid")
+	private List<CountryDTO>list=new ArrayList<CountryDTO>();
+	
+	public ContinentDTO() {
+		System.out.println(this.getClass().getSimpleName()+" Created");
+	}
+
+	public int getCid() {
+		return cid;
+	}
+
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<CountryDTO> getList() {
+		return list;
+	}
+
+	public void setList(List<CountryDTO> list) {
+		this.list = list;
+	}
+	
+}

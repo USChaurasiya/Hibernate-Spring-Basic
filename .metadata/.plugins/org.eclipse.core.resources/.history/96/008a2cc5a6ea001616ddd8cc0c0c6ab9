@@ -1,0 +1,57 @@
+package com.uma.HibernateApp.DTO;
+
+import java.io.Serializable;
+
+public class EmployeeDto implements Serializable 
+{
+	
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+private int id;
+	public int getId() {
+	return id;
+}
+
+public void setId(int id) {
+	this.id = id;
+}
+	private String name;
+	private String designation;
+	private int age;
+	private String address;
+	
+	public EmployeeDto() 
+	{
+		System.out.println("Employee Object is Created...");
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDesignation() {
+		return designation;
+	}
+
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+}

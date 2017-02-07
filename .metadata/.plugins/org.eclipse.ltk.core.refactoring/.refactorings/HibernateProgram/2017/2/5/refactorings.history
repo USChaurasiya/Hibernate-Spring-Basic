@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;HibernateProgram/src/com/bridgeit/dbApp/DTA&apos; to &apos;DTO&apos;" description="Rename resource &apos;DTA&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/bridgeit/dbApp/DTA" name="DTO" stamp="1486201691059" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;CompanyDTO.java&apos; to &apos;DTO&apos;" description="Move &apos;CompanyDTO.java&apos; to &apos;DTO&apos;" destination="src/com/bridgeit/dbApp/DTO" element1="src/com/bridgeit/dbApp/DAO/CompanyDTO.java" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1486201957707" updateReferences="true"/>
+</session>

@@ -1,0 +1,47 @@
+package com.uma.countryApp.DTO;
+
+import java.io.Serializable;
+
+public class CountryDTO implements Serializable
+{
+	private int cid;
+	private String name;
+	private String currency;
+	private int state;
+	private StateDTO stateDTO;
+	public CountryDTO() {
+		// TODO Auto-generated constructor stub
+	}
+	public int getCid() {
+		return cid;
+	}
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getCurrency() {
+		return currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
+	public int getState() {
+		return state;
+	}
+	public void setState(int state) {
+		this.state = state;
+	}
+	public StateDTO getStateDTO() {
+		return stateDTO;
+	}
+	public void setStateDTO(StateDTO stateDTO) {
+		this.stateDTO = stateDTO;
+	}
+	
+	
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ServletHibernate/WebContent/WEB-INF/bean.xml&apos; to &apos;servlet.xml&apos;" description="Rename resource &apos;bean.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/bean.xml" name="servlet.xml" stamp="1486214568582" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ServletHibernate/WebContent/WEB-INF/servlet.xml&apos; to &apos;ds-servlet.xml&apos;" description="Rename resource &apos;servlet.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/servlet.xml" name="ds-servlet.xml" stamp="1486215169578" updateReferences="true"/>
+</session>

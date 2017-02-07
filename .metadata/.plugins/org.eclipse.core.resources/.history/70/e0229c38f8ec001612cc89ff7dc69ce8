@@ -1,0 +1,16 @@
+package com.uma;
+
+
+public class Logic
+{
+ public static void main(String[] args) {
+	 Resource res = new ClassPathResource("spconfig.xml");
+		BeanFactory factory = new XmlBeanFactory(res);
+
+		Object o = factory.getBean("id1");
+		WelcomeBean wb = (WelcomeBean)o;
+
+		wb.show();
+
+}
+}

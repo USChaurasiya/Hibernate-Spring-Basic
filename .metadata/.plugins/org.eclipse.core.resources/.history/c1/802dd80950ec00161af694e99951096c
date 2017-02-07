@@ -1,0 +1,11 @@
+package com.uma.continentApp.DTO;
+
+import java.io.Serializable;
+
+public class ContinentDTO implements Serializable 
+{
+
+	private int cid;
+	private String name;
+	
+}

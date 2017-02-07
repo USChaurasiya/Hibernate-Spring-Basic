@@ -1,0 +1,40 @@
+package com.uma.countryApp.Util;
+
+import java.util.TreeSet;
+
+import org.hibernate.mapping.Set;
+
+import com.uma.countryApp.DTO.CountryDTO;
+import com.uma.countryApp.DTO.StateDTO;
+
+public class CountryDemo 
+{
+	public static void main(String[] args)
+	{
+		CountryDTO dto=new CountryDTO();
+		dto.setName("India");
+		dto.setState(29);
+		dto.setCurrency("INR");
+		
+		
+		
+		StateDTO sdto=new StateDTO();
+		sdto.setsName("Delhi");
+		sdto.setLanguage("Hindi");
+		sdto.setCountryDTO(dto);
+		
+		StateDTO sdto1=new StateDTO();
+		sdto1.setsName("Mumbai");
+		sdto1.setLanguage("Marathi");
+		sdto1.setCountryDTO(dto);
+		
+		
+		java.util.Set<StateDTO> set=new TreeSet<StateDTO>();
+		set.add(sdto);
+		set.add(sdto1);
+		dto.setStateDTO(set);
+		
+		
+		
+	}
+}

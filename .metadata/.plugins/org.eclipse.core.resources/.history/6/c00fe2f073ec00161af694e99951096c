@@ -1,0 +1,42 @@
+package com.uma.continentApp.Util;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.uma.continentApp.DTO.ContinentDTO;
+import com.uma.continentApp.DTO.CountryDTO;
+
+public class ContinentDemo {
+	public static void main(String[] args) {
+
+		ContinentDTO asia = new ContinentDTO();
+		asia.setName("Asia");
+
+		CountryDTO india = new CountryDTO();
+		india.setCtryName("India");
+		india.setCtryCurrency("INR");
+
+		CountryDTO sri = new CountryDTO();
+		sri.setCtryName("Sri Lanka");
+		sri.setCtryCurrency("Sri Lankan Rupee");
+
+		List<CountryDTO> country = new ArrayList<CountryDTO>();
+		country.add(india);
+		country.add(sri);
+
+		asia.setList(country);
+
+		Configuration cfg = new Configuration();
+		cfg.configure();
+		SessionFactory factory = cfg.buildSessionFactory();
+		Session session = factory.openSession();
+		Transaction tx = session.beginTransaction();
+		session.save(asia);
+		tx.commit();
+	}
+}

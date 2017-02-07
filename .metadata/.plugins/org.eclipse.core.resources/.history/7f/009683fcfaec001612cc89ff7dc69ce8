@@ -1,0 +1,14 @@
+package com.uma.Model;
+
+public class Bus implements Vehicle
+{
+
+	private int  maxSpeed;
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

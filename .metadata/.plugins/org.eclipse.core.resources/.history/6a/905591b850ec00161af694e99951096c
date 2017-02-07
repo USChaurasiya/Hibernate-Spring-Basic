@@ -1,0 +1,29 @@
+package com.uma.continentApp.DTO;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+@Entity
+@Table(name="Country_Table")
+public class CountryDTO implements Serializable  
+{
+
+	@Id
+	@GenericGenerator(name="any",strategy="increment")
+	@GeneratedValue(generator="any")
+	@Column(name="ctryId")
+		private int ctryId;
+	@Column(name="ctryName")
+		private String ctryName;
+	@Column(name="currency")
+		private String ctryCurrency;
+		
+		private ContinentDTO continentDTO;
+		
+}

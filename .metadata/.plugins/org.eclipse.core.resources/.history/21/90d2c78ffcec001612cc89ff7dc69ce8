@@ -1,0 +1,14 @@
+package com.uma.Util;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TravelDemo {
+
+	public static void main(String[] args) 
+	{
+		String res="config2.xml";
+		ApplicationContext factory=new ClassPathXmlApplicationContext(res);
+	}
+
+}

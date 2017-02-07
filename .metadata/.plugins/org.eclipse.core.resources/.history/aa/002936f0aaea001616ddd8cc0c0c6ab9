@@ -1,0 +1,18 @@
+package com.uma.HibernateApp.Util;
+
+import com.uma.HibernateApp.DAO.EmployeeDAO;
+import com.uma.HibernateApp.DTO.EmployeeDto;
+
+public class EmployeeDemo 
+{
+	public static void main(String[] args) {
+		EmployeeDto dto=new  EmployeeDto();
+		dto.setName("Uma Shankar");
+		dto.setAge(22);
+		dto.setAddress("Delhi");
+		dto.setDesignation("Java Developer");
+		EmployeeDAO dao=new EmployeeDAO();
+		dao.save(dto);
+		
+	}
+}

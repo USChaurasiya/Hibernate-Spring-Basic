@@ -1,0 +1,5 @@
+package com.uma.countryApp.DTO;
+
+public class StateDTO {
+
+}

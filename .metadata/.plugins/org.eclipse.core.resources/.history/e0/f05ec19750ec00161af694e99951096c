@@ -1,0 +1,12 @@
+package com.uma.continentApp.DTO;
+
+import java.io.Serializable;
+
+public class CountryDTO implements Serializable  
+{
+
+		private int ctryId;
+		private String ctryName;
+		private String ctryCurrency;
+		
+}

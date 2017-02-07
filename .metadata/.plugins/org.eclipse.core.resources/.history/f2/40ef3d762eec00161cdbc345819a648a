@@ -1,0 +1,44 @@
+package com.uma.countryApp.Util;
+
+import java.util.ArrayList;
+
+
+import com.uma.countryApp.DAO.CountryDAO;
+import com.uma.countryApp.DTO.CountryDTO;
+import com.uma.countryApp.DTO.StateDTO;
+
+public class CountryDemo 
+{
+	public static void main(String[] args)
+	{
+		CountryDTO dto=new CountryDTO();
+		dto.setName("India");
+		dto.setState(29);
+		dto.setCurrency("INR");
+		
+		
+		
+		StateDTO sdto=new StateDTO();
+		sdto.setsName("Delhi");
+		sdto.setLanguage("Hindi");
+		sdto.setCountryDTO(dto);
+		
+		StateDTO sdto1=new StateDTO();
+		sdto1.setsName("Mumbai");
+		sdto1.setLanguage("Marathi");
+		sdto1.setCountryDTO(dto);
+		
+		
+		java.util.List<StateDTO> set=new ArrayList<StateDTO>();
+		set.add(sdto);
+		set.add(sdto1);
+		dto.setStateDTO(set);
+		
+		
+		CountryDAO dao=new CountryDAO();
+		dao.save(dto);
+		
+		
+		
+	}
+}
