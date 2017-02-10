@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Registration_Form</display-name>
+  <welcome-file-list>
+ 
+    <welcome-file>welcome.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>FormData</servlet-name>
+  <servlet-class>com.bridgeit.formApp.Controller.FormData</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>FormData</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>LoginData</servlet-name>
+  <servlet-class>ccom.bridgeit.formApp.Controller.LoginForm</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LoginData</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Success</servlet-name>
+  <servlet-class>com.bridgeit.formApp.View.Success</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Success</servlet-name>
+  <url-pattern>/Success</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>Fail</servlet-name>
+  <servlet-class>com.bridgeit.formApp.View.fail</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Fail</servlet-name>
+  <url-pattern>/fail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Login Success</servlet-name>
+  <servlet-class>com.bridgeit.formApp.View.SuccessfullyLogin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Login Success</servlet-name>
+  <url-pattern>/SuccessfullLogin</url-pattern>
+  </servlet-mapping>
+</web-app>
