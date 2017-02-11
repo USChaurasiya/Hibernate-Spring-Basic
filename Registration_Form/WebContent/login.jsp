@@ -21,7 +21,7 @@
 </script>
 </head>
 <body>
-	<form name="loginForm" action="login" method="get"onsubmit="return validateForm()">
+	<form name="loginForm" action="Login" method="get"onsubmit="return validateForm()">
 		<br>
 
 		<fieldset>

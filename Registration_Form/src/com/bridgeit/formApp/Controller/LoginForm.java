@@ -22,8 +22,9 @@ public class LoginForm extends HttpServlet
 		HttpSession session=req.getSession();
 		
 		EmployeeControl emp=new  EmployeeControl();
-		Employee e=emp.getEmployeeByName(name);
+		String e=emp.getEmployeeByName(name);
 		
+			
 		if(id.equals(e))
 		{
 			resp.sendRedirect("SuccessfullLogin");

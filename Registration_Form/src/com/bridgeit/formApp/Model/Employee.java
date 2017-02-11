@@ -36,7 +36,7 @@ public class Employee implements Serializable {
 	private String email;
 
 	public Employee() {
-		System.out.println("New Employee Created...");
+		System.out.println("");
 	}
 
 	public int getId() {

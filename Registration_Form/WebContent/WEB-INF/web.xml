@@ -18,12 +18,22 @@
   
   <servlet>
   <servlet-name>LoginData</servlet-name>
-  <servlet-class>ccom.bridgeit.formApp.Controller.LoginForm</servlet-class>
+  <servlet-class>com.bridgeit.formApp.Controller.LoginForm</servlet-class>
   </servlet>
   
   <servlet-mapping>
   <servlet-name>LoginData</servlet-name>
-  <url-pattern>/login</url-pattern>
+  <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>forgetForm</servlet-name>
+  <servlet-class>com.bridgeit.formApp.Controller.forgetFrom</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>forgetForm</servlet-name>
+  <url-pattern>/forget</url-pattern>
   </servlet-mapping>
   
   <servlet>

@@ -1,7 +1,6 @@
 package com.bridgeit.formApp.Controller;
 
 
-import java.util.List;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
@@ -54,19 +53,20 @@ public class EmployeeControl
 		}
 			
 	}
-	public Employee getEmployeeByName(String name)
+	
+	public String  getEmployeeByName(String name)
 	{
 		Session s=getSession();
-		String query="select eid from Employee where ename='"+name+"'";
-		
-		
+		String query="select e.eid from Employee e where e.ename='"+name+"'";
 		Query q1=s.createQuery(query);
-		//q1.setParameter(0,name);
+		String e=(String) q1.uniqueResult();
+		return e;
+		/*
+		 q1.setParameter(0,name);
 		System.out.println("Employee List:");
 		List<Employee> empList=q1.list();
-		return (empList.get(0));
-		
-		/*
+	System.out.println(empList.get(0).getEid());
+		return (empList.get(0).getEid());
 		for(Employee emp : empList){
 			System.out.println("List of Employees::"+emp.getEid()+","+emp.getEname()+","+emp.getEmail());
 		}*/

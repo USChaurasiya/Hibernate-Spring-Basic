@@ -8,8 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class fail extends HttpServlet
+import com.bridgeit.formApp.Controller.EmployeeControl;
+
+public class forget extends HttpServlet
 {
+	EmployeeControl emp=new EmployeeControl();
+	emp.
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter writer=response.getWriter();
 		

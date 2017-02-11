@@ -21,6 +21,6 @@
 	        <!-- Echo all executed SQL to stdout -->
 	        <property name="show_sql">true</property>
 			   <property name="hbm2ddl.auto">update</property>
-	<mapping class="com.bridgeit.formApp.Employee"/>
+	<mapping class="com.bridgeit.formApp.Model.Employee"/>
 	</session-factory>
 </hibernate-configuration>
