@@ -8,6 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * FormData Class is used to Fetch the Registration form Data .
+ * @author um@.
+ *
+ */
 public class FormData extends HttpServlet 
 {
 	@Override

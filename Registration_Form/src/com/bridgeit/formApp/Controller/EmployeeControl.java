@@ -12,6 +12,11 @@ import com.bridgeit.formApp.Model.Employee;
 
 
 
+/**
+ * This Class Contain two method one as addEmployee() which is used to add particular Employee Details into Data Base and Second is getEmployeeByName() which is used to find Employee Id according to Employee name.
+ * @author um@.
+ *
+ */
 public class EmployeeControl 
 {
 	private static  SessionFactory sessionFactory;
@@ -26,6 +31,17 @@ public class EmployeeControl
 	}
 		   return s;
 	  }
+	/**
+	 * This method is used to add a particular Employee Details into data base by using Hibernate.
+	 * @param id (String)
+	 * @param name(String)
+	 * @param dept (String)
+	 * @param age (String)
+	 * @param exp (String)
+	 * @param address (String)
+	 * @param mobile (String)
+	 * @param mail (String)
+	 */
 	public void addEmployee(String id,String name,String dept,String age,String exp,String address,String mobile,String mail)
 	{
 		try {
@@ -54,6 +70,12 @@ public class EmployeeControl
 			
 	}
 	
+	/**
+	 * This method is used to find the particular Employee Id by Employee Name
+	 * It take {@link String} Type Parameter.
+	 * @param name 
+	 * @return String ID
+	 */
 	public String  getEmployeeByName(String name)
 	{
 		Session s=getSession();

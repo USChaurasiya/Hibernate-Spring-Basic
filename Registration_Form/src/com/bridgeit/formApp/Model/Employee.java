@@ -9,6 +9,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
+/**
+ * This is Entity Class which contains all the data member related to the Employee.
+ * @author um@.
+ *
+ */
 @Entity
 @Table(name="Employee_Table")
 public class Employee implements Serializable {

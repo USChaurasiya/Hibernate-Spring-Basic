@@ -8,8 +8,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.omg.CosNaming.NamingContextPackage.NotEmpty;
+
 import com.bridgeit.formApp.Model.Employee;
 
+/**
+ * Note: This class is used to fetch the data  from Login form . 
+ * @author uma@.
+ *
+ */
 public class LoginForm extends HttpServlet 
 {
 	@Override

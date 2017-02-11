@@ -13,7 +13,7 @@ import com.bridgeit.formApp.Controller.EmployeeControl;
 public class forget extends HttpServlet
 {
 	EmployeeControl emp=new EmployeeControl();
-	emp.
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter writer=response.getWriter();
 		
